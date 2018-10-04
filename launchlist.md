@@ -23,6 +23,8 @@
 * Any special security to consider e.g. form sanitization
 * Google Analytics code is present
 * Everything is in git
+* Fiddley meta data like twitter / Open Graph tags
+* a11y and schema.org metadata
 
 
 ### Meta
