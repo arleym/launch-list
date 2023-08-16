@@ -1,94 +1,131 @@
 
 # 🚀 Launch List
 
-### Setup the theme
-
-* Update client specific variables (map location etc.)
-* Update style settings in Sass (colors, fonts, font size etc.)
+## Project Setup
+Separate concerns by platform, content, media, code; and pick one fight at a time. Track your todos in a place that everyone can see.
 
 
-### Development
+## PLATFORM
+- [ ] You could get SFTP access in a pinch
+- [ ] Cache and CDN options reviewed
 
-* Check stock photos are sourced (not just output from design file)
-* Do any of the sourced images need attribution? Create a photo credits page, link in footer.
-* Page titles and meta descriptions are entered
-* Favicon / Site icons and theme colors are in place (manifest)
-* Make sure all the current_page and current_child vars are set right for each page "current" state in the nav
-* Check the text highlight colors (::selection)
-* If recycling another project do a find for the previous client's name
-* Set Google Maps API Key: http://confluence.carpages.ca/display/DSP/Get+a+Google+Maps+API+Key
-* Comment code
-* Add notes to internal documentation if applicable.
-* Any new patterns to add to pattern lab / snippet library?
-* Any special security to consider e.g. form sanitization
-* Google Analytics code is present
-* Everything is in git
-* Fiddley meta data like twitter / Open Graph tags
-* a11y and schema.org metadata
+
+### WordPress
+- [ ] Create theme / child-theme
+- [ ] Update the style.css name
+- [ ] Update the screenshot / thumbnail
+- [ ] Go through all the settings
+- [ ] remove unused plugins
+- [ ] for teams: Is there an Admin account in your shared password manager?
+- [ ] is 2FA setup
+
+
+### Setup the theme from a Boilerplate
+- [ ] Update client specific content variables (name, map location etc.)
+- [ ] Update style settings in Sass (colors, fonts, set variables etc.)
+- [ ] If recycling code from another project be diligent in scouring everything for signs of the other client's project.
+- [ ] Set Google Maps API Key
+
+
+***
+
+
+## CONTENT
+- [ ] Do any of the sourced images need attribution? Create a photo credits page, link in footer.
+- [ ] Page titles and meta descriptions are entered
+- [ ] Open Graph Image / Featured Image for all key pages and posts
+- [ ] If you have forms and/or analytics tracking you need Privacy, Terms, Cookie policies that are GDPR compliant / relevant to the user's host-site's country
+
+
+## MEDIA
+- [ ] Favicon / Site icons and theme colors are in place
+- [ ] Favicon works in light or dark mode
+- [ ] Check stock photos are sourced (not just output from design file)
+- [ ] a11y: Alt descriptions on media, title/description on SVG
+
+
+### Development & User Experience
+- [ ] Make sure all the "current page" states are set
+- [ ] Check the text highlight colors (::selection)
+- [ ] Comment code for other developers - inline and/or repo readme
+- [ ] Add notes to internal documentation if applicable
+- [ ] Any special security to consider?
+- [ ] Google Analytics code is present
+- [ ] All custom code is in git
+- [ ] Fiddley meta data like twitter / Open Graph tags in place and tested for key pages (eg. in Slack)
+- [ ] Semantic code used (eg. nav, header, footer, aside)
+- [ ] [schema.org](https://schema.org/docs/schemas.html) metadata is present - eg for Person, Organization
+- [ ] [Schema markup tests](https://search.google.com/structured-data/testing-tool)
+- [ ] a11y: Aria is in place for complex interactive layout stuff (especially "hidden content" patterns like tabs, accordions, carousels)
+- [ ] a11y: labels on buttons and form labels
+- [ ] a11y: links have text descriptions
+- [ ] a11y: html lang element present and correct
+- [ ] Install [A11y audits extension](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb)
+- [ ] a11y: use Lighthouse to check for low contrast text - [Webaim Contrast tester](https://webaim.org/resources/contrastchecker/)
+- [ ] Run [Page speed insights](https://developers.google.com/speed/pagespeed/insights)
+- [ ] Any new patterns to add to Boilerplate or snippet library?
 
 
 ### Meta
+- [ ] Update page list in sitemap.xml
+- [ ] Remove unneeded pages, posts, comments
+- [ ] Review the files from repo
+- [ ] 301 Redirects in .htaccess for full refreshes
+- [ ] Updates humans.txt
+- [ ] Check robots.txt
 
-* Update page list in sitemap
-* Remove unneeded pages in views/Page
-* Review the files from repo
-* 301 Redirects in .htaccess for full refreshes
-* Updates humans.txt
-* Check robots.txt
+
+***
 
 
-### Dev QA
+## Testing
 
-* Review Design Brief / specs / reqs / issues
-* Meet client brand compliance guidelines (if applicable)
-* Test all state changes, e.g. sale prices, sold state, dates
-* Review print styles
-* QA test on devices
-* QA test in browsers (especially Internet Explorer IE11, Edge as applicable)
-* Make sure there is inventory on the beta server
-* Test front page search widget
-* Is provincial tax rate correct? 
-* A11y considerations in place? Alt, ARIA, contrast - see https://a11yproject.com for checklist
-* Most projects have TODO items left incomplete - where should these be tracked as nice-to-have upgrades? e.g. website-birthdays
+### QA / UAT Testing
+- [ ] Review Design Brief / specs / reqs / open issues
+- [ ] Meet client brand compliance guidelines (if applicable)
+- [ ] Test all state changes, e.g. for products: sale prices, sold state, dates
+- [ ] Review print styles
+- [ ] Responsive Web Design test browser sizes (height and width)
+- [ ] Test on multiple devices
+- [ ] Test in browsers (Webkit, Blink, Gecko)
+- [ ] Test search widget
+- [ ] A11y considerations in place? Alt, ARIA, contrast - see https://a11yproject.com for checklist
+- [ ] Most projects have TODO items left incomplete - where should these be tracked as nice-to-have upgrades? e.g. website-birthdays
+- [ ] Consider User Testing - observing site-use with an audience member
 
 
 ### Peer Review QA
-
-* Test the staging site
-  * Make issues for bugs with the site
-  * Log improvement ideas at the boilerplate level
-* Try briefly on tablet and desktop, test more thorough on mobile
-* Look for broken links
-* Spell check
-* Check console for errors, console.log type dev messages
-* Double check CSS and JS are minified
-* Visit every page you find, including multiple posts
-* Test form(s)
-* Compare to the design brief
-* Is the map accurate to the address?
-* Check /sitemap.xml
-
-
-### Launch
-
-* Tell the client / PM
-* If applicable plan marketing announcement (social media, press releaes, team announcement)
-* add to uptime monitor
-* if WP, add to wp manage
+- [ ] Test the staging site
+- [ ] Make issues for bugs with the site
+- [ ] Log improvement ideas at the boilerplate level
+- [ ] Try briefly on tablet and desktop, test more thorough on mobile
+- [ ] Look for broken links
+- [ ] Spell check
+- [ ] Check console for errors, console.log type dev messages
+- [ ] Double check CSS and JS are minified
+- [ ] Visit every page you find, including multiple posts
+- [ ] Test form(s) - for errors, incomplete, that it sends/stores
+- [ ] Compare to the design brief
+- [ ] Is the map accurate to the address?
+- [ ] Check /sitemap.xml
+- [ ] Test 404 page
 
 
-### Post Launch
-
-* Enable SSL
-* Confirm Analytics are tracking
-* Test 404 page
-* Check for general JS errors / network 404s
-* Consider adding to the portfolio
+***
 
 
-### Site Audit / Upgrades
+## Launch
+- [ ] Tell the client / PM / stakeholders / team
+- [ ] If applicable plan marketing announcement (social media, press releaes)
+- [ ] Add to uptime monitor
+- [ ] If WordPress, add to ManageWP
+- [ ] Ensure SSL is enabled
+- [ ] Share Analytics with appropriate people
+- [ ] Cache is on
 
-* Page speed insights: https://developers.google.com/speed/pagespeed/insights  
-* Schema markup tests: https://search.google.com/structured-data/testing-tool  
-* A11y audits extension: https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb    
-* Code linters and validators are nice, but often are impractical    
+
+### Post-Launch
+- [ ] Confirm Analytics are tracking
+- [ ] Check for general JS errors / network 404s
+- [ ] Consider adding to the portfolio
+- [ ] Submit sitemap to Google Search Console
