@@ -8,16 +8,20 @@ Separate concerns by platform, content, media, code; and pick one fight at a tim
 ## PLATFORM
 - [ ] You could get SFTP access in a pinch
 - [ ] Cache and CDN options reviewed
+- [ ] Have some system for automated backups
+- [ ] Consider having the hosting level password hide the site during development
 
 
 ### WordPress
+- [ ] Perhaps start from one of our LocalWP Blueprints
 - [ ] Create theme / child-theme
 - [ ] Update the style.css name
 - [ ] Update the screenshot / thumbnail
-- [ ] Go through all the settings
+- [ ] Go through all the WP Core settings
+- [ ] Go through all plugin settings
+- [ ] Go through theme customizer and widget areas
 - [ ] remove unused plugins
 - [ ] for teams: Is there an Admin account in your shared password manager?
-- [ ] is 2FA setup
 
 
 ### Setup the theme from a Boilerplate
@@ -27,18 +31,28 @@ Separate concerns by platform, content, media, code; and pick one fight at a tim
 - [ ] Set Google Maps API Key
 
 
+### Security concerns
+- [ ] Use unguessable usernames - Maybe random words like "PurpleTree" or some formula like Sitename + Job title + Number
+- [ ] Wordfence + 2FA + setting minimum password strength
+
+
 ***
 
 
 ## CONTENT
+- [ ] Did the client provide a copydeck or share a cloud folder of contents, media, social media links?
 - [ ] Do any of the sourced images need attribution? Create a photo credits page, link in footer.
 - [ ] Page titles and meta descriptions are entered
 - [ ] Open Graph Image / Featured Image for all key pages and posts
 - [ ] If you have forms and/or analytics tracking you need Privacy, Terms, Cookie policies that are GDPR compliant / relevant to the user's host-site's country
+- [ ] Copyright © is in the footer and is dynamic to current year
+
 
 
 ## MEDIA
 - [ ] Favicon / Site icons and theme colors are in place
+- [ ] Optimize images - next gen where possible, well sized; consider using srcset
+- [ ] Lazyload images where practical
 - [ ] Favicon works in light or dark mode
 - [ ] Check stock photos are sourced (not just output from design file)
 - [ ] a11y: Alt descriptions on media, title/description on SVG
@@ -63,6 +77,8 @@ Separate concerns by platform, content, media, code; and pick one fight at a tim
 - [ ] Install [A11y audits extension](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb)
 - [ ] a11y: use Lighthouse to check for low contrast text - [Webaim Contrast tester](https://webaim.org/resources/contrastchecker/)
 - [ ] Run [Page speed insights](https://developers.google.com/speed/pagespeed/insights)
+- [ ] Run [Mobile Friendly test](https://search.google.com/test/mobile-friendly)
+- [ ] Run [Accessibility Insight](A11y audits https://accessibilityinsights.io) - this takes hours, should be run annually on the Boilerplate/Blueprint
 - [ ] Any new patterns to add to Boilerplate or snippet library?
 
 
@@ -122,7 +138,7 @@ Separate concerns by platform, content, media, code; and pick one fight at a tim
 - [ ] Ensure SSL is enabled
 - [ ] Share Analytics with appropriate people
 - [ ] Cache is on
-
+- [ ] Ensure the WP Core setting isn't blocking search engines
 
 ### Post-Launch
 - [ ] Confirm Analytics are tracking
