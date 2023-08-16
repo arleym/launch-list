@@ -48,7 +48,6 @@ Separate concerns by platform, content, media, code; and pick one fight at a tim
 - [ ] Copyright © is in the footer and is dynamic to current year
 
 
-
 ## MEDIA
 - [ ] Favicon / Site icons and theme colors are in place
 - [ ] Optimize images - next gen where possible, well sized; consider using srcset
@@ -71,6 +70,7 @@ Separate concerns by platform, content, media, code; and pick one fight at a tim
 - [ ] [schema.org](https://schema.org/docs/schemas.html) metadata is present - eg for Person, Organization
 - [ ] [Schema markup tests](https://search.google.com/structured-data/testing-tool)
 - [ ] a11y: Aria is in place for complex interactive layout stuff (especially "hidden content" patterns like tabs, accordions, carousels)
+- [ ] a11y: Animations should be stopped with a "prefers reduced motion" setting
 - [ ] a11y: labels on buttons and form labels
 - [ ] a11y: links have text descriptions
 - [ ] a11y: html lang element present and correct
@@ -78,7 +78,7 @@ Separate concerns by platform, content, media, code; and pick one fight at a tim
 - [ ] a11y: use Lighthouse to check for low contrast text - [Webaim Contrast tester](https://webaim.org/resources/contrastchecker/)
 - [ ] Run [Page speed insights](https://developers.google.com/speed/pagespeed/insights)
 - [ ] Run [Mobile Friendly test](https://search.google.com/test/mobile-friendly)
-- [ ] Run [Accessibility Insight](A11y audits https://accessibilityinsights.io) - this takes hours, should be run annually on the Boilerplate/Blueprint
+- [ ] Run in-dept [Accessibility Insight](https://accessibilityinsights.io) - this takes hours, should be run annually on the Boilerplate/Blueprint. Or, quicker [a11yproject checklist](https://www.a11yproject.com/checklist) (which is the shorter version of the [wcag "quick" reference](https://www.w3.org/WAI/WCAG21/quickref/))
 - [ ] Any new patterns to add to Boilerplate or snippet library?
 
 
