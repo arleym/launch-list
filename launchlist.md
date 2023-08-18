@@ -20,8 +20,14 @@ Separate concerns by platform, content, media, code; and pick one fight at a tim
 - [ ] Go through all the WP Core settings
 - [ ] Go through all plugin settings
 - [ ] Go through theme customizer and widget areas
-- [ ] remove unused plugins
-- [ ] for teams: Is there an Admin account in your shared password manager?
+- [ ] Femove unused plugins and themes
+- [ ] Enable Auto updates for themes and plugins
+- [ ] For teams: Is there an Admin account in your shared password manager?
+- [ ] Test Template Hierarchies and other WP templates
+- [ ] Test Search
+- [ ] Test Archives (Tag, Cat, date, author)
+- [ ] 404
+- [ ] Set the client's non-human email as the website's email address in General Settings
 
 
 ### Setup the theme from a Boilerplate
@@ -46,15 +52,27 @@ Separate concerns by platform, content, media, code; and pick one fight at a tim
 - [ ] Open Graph Image / Featured Image for all key pages and posts
 - [ ] If you have forms and/or analytics tracking you need Privacy, Terms, Cookie policies that are GDPR compliant / relevant to the user's host-site's country
 - [ ] Copyright © is in the footer and is dynamic to current year
+- [ ] Spell check as you go
 
 
 ## MEDIA
 - [ ] Favicon / Site icons and theme colors are in place
 - [ ] Optimize images - next gen where possible, well sized; consider using srcset
+- [ ] Where possible use SVG for images like logos
 - [ ] Lazyload images where practical
 - [ ] Favicon works in light or dark mode
 - [ ] Check stock photos are sourced (not just output from design file)
 - [ ] a11y: Alt descriptions on media, title/description on SVG
+
+
+## Design
+Some of these design steps are for more robust brand type of work
+- [ ] [Test color contrast](https://contrast-ratio.com/) - particularly for text colors on the brand colors. It is 10x easier to do this before development
+- [ ] Bootstrap assumes that the Primary theme color is dark, has highest contrast - in such cases set the Bootstrap primary to a dark grey and lean on the secondary as accent
+- [ ] Competitive analysis
+- [ ] Moodboards
+- [ ] Building a [Design System](https://support.invisionapp.com/docs/design-system-manager-dsm) or approaching development with [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)
+- [ ] Full design comps (I recommend designing for desktops, we can make it responsive in browser)
 
 
 ### Development & User Experience
@@ -116,7 +134,6 @@ Separate concerns by platform, content, media, code; and pick one fight at a tim
 - [ ] Log improvement ideas at the boilerplate level
 - [ ] Try briefly on tablet and desktop, test more thorough on mobile
 - [ ] Look for broken links
-- [ ] Spell check
 - [ ] Check console for errors, console.log type dev messages
 - [ ] Double check CSS and JS are minified
 - [ ] Visit every page you find, including multiple posts
@@ -145,3 +162,4 @@ Separate concerns by platform, content, media, code; and pick one fight at a tim
 - [ ] Check for general JS errors / network 404s
 - [ ] Consider adding to the portfolio
 - [ ] Submit sitemap to Google Search Console
+- [ ] Delete staging environment
