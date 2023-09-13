@@ -163,4 +163,4 @@ Some of these design steps are for more robust brand type of work
 - [ ] Consider adding to the portfolio
 - [ ] Submit sitemap to Google Search Console
 - [ ] Delete staging environment
-- The website is just getting started ;)
+- Now the website is just getting started ;)
